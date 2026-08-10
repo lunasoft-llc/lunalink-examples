@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LunaLink.Examples.Master/LunaLink.Examples.Master.csproj" />
+    <Project Path="src/LunaLink.Examples.Node/LunaLink.Examples.Node.csproj" />
+  </Folder>
+</Solution>
