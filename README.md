@@ -244,7 +244,7 @@ Confirm that `AuthToken` is identical in both `appsettings.json` files. Restart 
 
 ### `Outbox is not initialized`
 
-Restore and build the current repository version. The Node startup explicitly initializes the outbox before starting LunaLink `1.0.48`.
+Restore and build the current repository version. LunaLink `1.0.50` initializes the outbox automatically during Node startup.
 
 ### Port `7788` is already in use
 

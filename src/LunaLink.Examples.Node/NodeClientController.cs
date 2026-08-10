@@ -17,9 +17,6 @@ internal sealed class NodeClientController(IServiceProvider services) : IDisposa
         try
         {
             if (_client is not null) return;
-            // LunaLink 1.0.48 requires hosts to initialize the shared outbox.
-            // Newer package versions also perform this safely during client startup.
-            await services.GetRequiredService<LunaLinkOutbox>().InitializeAsync();
             var client = ActivatorUtilities.CreateInstance<LunaLinkClient>(services);
             await client.StartAsync(CancellationToken.None);
             _client = client;
